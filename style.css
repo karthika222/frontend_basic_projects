@@ -1,0 +1,23 @@
+#b1
+{
+    color: blueviolet;
+    cursor:pointer;
+    width:105px;
+    height:75px;
+    display: block;
+}
+h1{
+    margin-bottom: 40px;
+
+}
+body{
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
