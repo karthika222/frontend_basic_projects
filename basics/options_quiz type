@@ -1,0 +1,71 @@
+<html>
+<body>
+  <div class="circle"></div>
+<div id="choice">
+<p>What is the sales target for the upcoming year?</p>
+  <!--<div class="circle"></div>-->
+  <label id="opt1">
+    <input type="radio"  name="target">23000 usd 
+      </label><br>
+    <label id="opt2">
+      <input type="radio"  name="target">25000usd
+        </label><br>
+    <label id="opt3">
+      <input type="radio" name="target">26000usd
+        </label><br>
+      <label id="opt4">
+<input type="radio" id="opt4" name="target">27000usd
+  </label>
+</div>
+        
+  <!--<div class="circle"></div>-->
+<style>
+  .circle {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  border-radius: 50px;
+}
+#opt1
+{ 
+background-color: yellow;
+border-radius:10px;
+padding:5px 10px;
+display:inline-block;
+cursor:pointer;
+
+}
+ #opt2
+{ background-color: pink;
+border-radius:10px;
+padding:5px 10px;
+  display:inline-block;
+text-align:center;
+  cursor:pointer;
+}
+   #opt3
+{ background-color: orange;
+border-radius:10px;
+padding:5px 10px;
+  display:inline-block;
+text-align:center;
+  cursor:pointer;
+}
+ #opt4
+{ background-color: lightblue;
+border-radius:10px;
+padding:5px 10px;
+  display:inline-block;
+text-align:center;
+  cursor:pointer;
+}
+  #opt1, #opt2, #opt3, #opt4 {
+  margin-bottom: 5px;
+}
+
+  <!--<div class="circle"></div>-->
+</style>
+
+
+</body>
+</html>
