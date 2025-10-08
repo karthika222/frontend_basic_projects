@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <nav>
+    <div class="logo"><img src="MyLogo.png" alt= MyLogo></div>
+    <ul class="list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </nav>
+  </body>
+<style>
+  nav{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    }
+ul{
+       display:flex;
+       list-style:none;
+       gap:20px;
+       
+    }
+     li a
+     {
+       text-decoration: none; 
+       color:white;
+     }
+</style>
+</html>
