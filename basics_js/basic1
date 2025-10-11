@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--<p>Enter your name:</p>
+    <input id="nameInput" type="text" />
+    <button onclick="sayHello()">Submit</button>
+    <p id="output"></p>-->
+    <p> Enter your name:</p>
+    <input type="text" id="name">
+    <button onclick="sayHello()">Submit</button>
+    <h3 id="res"></h3>
+
+    <script>
+       function sayHello()
+       {
+        const name=document.getElementById('name').value;
+        document.getElementById('res').textContent=`Hello, ${name}!`;
+
+       } 
+    </script>
+
+    <!--<script>
+      function sayHello() {
+        const name = document.getElementById('nameInput').value;
+        document.getElementById('output').textContent = `Hello, ${name}!`;
+      }
+    </script>-->
+
+  </body>
+</html>

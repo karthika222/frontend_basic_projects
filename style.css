@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     padding: 0;
     margin:0;
@@ -25,4 +26,28 @@ a{
     background-color: #f08804;
     color:white;
     width:50px;
+=======
+#b1
+{
+    color: blueviolet;
+    cursor:pointer;
+    width:105px;
+    height:75px;
+    display: block;
+}
+h1{
+    margin-bottom: 40px;
+
+}
+body{
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+>>>>>>> 2a0141c83b9dc71919c169ee7a8ae357d1059fc3
 }

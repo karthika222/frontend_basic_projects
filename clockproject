@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> clock </title>
+</head>
+<body>
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: black;
+      color: lime;
+      font-family: monospace;
+    }
+    #clock {
+      font-size: 60px;
+      letter-spacing: 5px;
+    }
+    </style>
+    <h1>
+        <div id="clock"> 00:00:00 </div>
+    </h1>
+    <script>
+
+        function clock1()
+        {
+            const now=new Date();
+            const h=String(now.getHours()).padStart(2,'0')
+            const m=String(new Date().getMinutes()).padStart(2,'0')
+            const s=String(new Date().getSeconds()).padStart(2,'0')
+            document.getElementById('clock').textContent=`${h}:${m}:${s}`;
+        }
+        setInterval(clock1,1000);
+        clock1();
+
+
+        </script>
+    </body>
+    </html>
+

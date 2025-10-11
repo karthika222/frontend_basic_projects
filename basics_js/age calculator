@@ -1,0 +1,39 @@
+<html>
+    <title> Age Calculator</title>
+    <body>
+        <h3>Enter Your Birth Year</h3>
+        <input type="number" id="year">
+        <button onclick="AgeCalc()">Your Age is</button>
+        <h3 id="output"></h3>
+<script>
+    //const year=document.getElementById('year');
+    /*function AgeCalc()
+    {
+       const year=Number(document.getElementById('year').value); 
+       
+       const age=2025-year;
+       document.getElementById('output').textContent=`The Current Age is ${age}`;
+    }*/
+   function AgeCalc() {
+            const year = Number(document.getElementById('year').value);
+            //const year = Number(yearInput.value);
+            const currentYear = new Date().getFullYear();
+
+            // Validate input
+            if (!year || year > currentYear || year < 1900) {
+                document.getElementById('output').textContent = '⚠️ Please enter a valid year between 1900 and ' + currentYear + '.';
+                return;
+            }
+
+            const age = currentYear - year;
+            document.getElementById('output').textContent = `✅ You are approximately ${age} years old.`;
+        }
+
+
+
+
+
+</script>
+
+    </body>
+</html>

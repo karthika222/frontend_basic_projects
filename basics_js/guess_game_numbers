@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Guess a number between 1 to 100 </p>
+    <input type="number" id="num" >
+    <button onclick="guess()">Submit Guess</button>
+    <h3 id="output"></h3>
+</body>
+<script>
+     const random_num=Math.floor(Math.random()*100)+1;
+    function guess()
+    {
+        const user_num=Number(document.getElementById('num').value);
+        const mssg=document.getElementById('output');
+        if(isNaN(user_num))
+        mssg.textContent='Please Enter a Valid Number';
+        else if(user_num<random_num)
+        mssg.textContent='Number entered is lesser';
+        else if(user_num>random_num)
+        mssg.textContent='Number entered is more';
+        else
+        mssg.textContent='Exactly!! The number guessed is right';
+
+    }
+</script>
+</body>
+</html>

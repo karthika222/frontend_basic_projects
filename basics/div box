@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Center a Div Using Flexbox</title>
+  </head>
+    
+<body>
+  <div class="container">
+    <div class="box">Centered Box</div>
+  </div>
+  <style>
+   
+    .container {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center;     /* Centers vertically */
+      height: 100vh;           /* Full viewport height */
+      background-color: green;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: yellow;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+  </style>
+</body>
+</html>
