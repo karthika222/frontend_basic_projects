@@ -1,0 +1,123 @@
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1; 
+}
+body{
+     /* backdrop-filter: blur(5px);  */
+     background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    /* background-color: black; */
+    /* background-color: black; */
+    /* backdrop-filter: blur(5px); */
+}
+
+.logos img
+{
+    height: 120px;
+    width: 200px;
+    margin-left: 160px;
+    background: rgba(0,0,0,0.4);
+
+}
+select
+{
+    height: 32px;
+    width: 124px;
+    font-size:20px;
+}
+nav{
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+.left
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; 
+    margin-top: 0;
+    gap:5px;
+
+}
+#btn
+{
+    background-color: red;
+    color:white;
+    width:76px;
+    height: 25px;
+    border-color: red;
+    border-radius: 5px;
+}
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: unset;
+  text-align: center;
+  margin: 0;
+  /* line-height: 1.2;  */
+}
+
+#line1, #line2, #line3 {
+  display: block; /* Makes each span act like a div */
+}
+
+#line4 {
+  font-family: unset;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:24px; 
+}
+#mail p
+{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+}
+.email_place
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+#email
+{
+    height:50px;
+    width:500px;
+    background-color: black;
+    color:#ccc;
+    font-size:20px;
+    
+    
+}
+#submit
+{
+    margin-left:10px;
+    height:60px;
+    width:300px;
+    color:white;
+    background-color: red;
+    border-radius:2px;
+    font-size:30px;
+    
+}
