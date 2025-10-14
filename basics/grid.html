@@ -1,0 +1,55 @@
+<html>
+    <body>
+    <div class="grid-container">
+     <div class="g" id="g1" style="background-color: aqua;">item1</div>
+    <div class="g" id="g2" style="background-color: lightcoral;">item2</div>
+    <div class="g" id="g3" style="background-color: lightsalmon;">item3</div>
+    <div class="g" id="g4" style="background-color: lightcyan;">item4</div>
+    <div class="g" id="g5" style="background-color: lightblue;">item5</div>
+    <div class="g" id="g6" style="background-color: lightgray;">item6</div>
+    <div class="g" id="g7" style="background-color: lightyellow;">item7</div>
+    <div class="g" id="g8" style="background-color: pink;">item8</div>
+    <div class="g" id="g9" style="background-color: lightgoldenrodyellow;">item9</div>
+  </div>
+    </div>
+    <style>
+     body
+      {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background-color:red;
+      background: rgba(255, 0, 0, 0.4);
+
+      }
+      .grid-container
+      {
+      	background-color: lightgreen;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+         gap:10px;
+          width: 900px; 
+          height:500px;
+         margin: 40px auto;                     
+        padding: 10px;
+        
+
+    }
+    .grid-item
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    @media(max-width:600px)
+    {
+        .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        }
+    }
+    </style>
+    
+    </body>
+    
+</html>
