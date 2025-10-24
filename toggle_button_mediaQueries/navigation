@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 2px 10px;
+    }
+
+    #logo {
+        font-weight: bold;
+    }
+
+    .navlinks a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navlinks a:hover {
+        cursor: pointer;
+        color: rgb(223, 207, 207);
+    }
+
+    #menutoggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    @media(max-width:1043px) {
+        .menu-btn {
+            display: flex;
+        }
+
+        .navlinks {
+            display: none;
+            flex-direction: column;
+            background-color: black;
+            position: absolute;
+             top:60px; 
+            right:0px;
+            width:150px; 
+            padding: 10px;
+            border:2px solid white;
+
+        }
+
+        #menutoggle:checked + .menu-btn ~ .navlinks {
+            display: flex;
+            
+        }
+        .navlinks a {
+         margin: 10px 10px 10px 10px;
+        border-bottom: 1px solid white;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div id="logo">MySite</div>
+
+    <input type="checkbox" id="menutoggle">
+    <label for="menutoggle" class="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+
+    <div class="navlinks">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+</body>
+</html>
